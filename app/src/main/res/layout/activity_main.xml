@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neebles.moviedb.MainActivity">
+
+    <TextView
+        android:id="@+id/viewMovies"
+        android:layout_width="@dimen/buttonWide"
+        android:layout_height="@dimen/buttonHigh"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:text="@string/view_movies"
+        android:onClick="openMovies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/login_form"
+        android:layout_width="@dimen/buttonWide"
+        android:layout_height="@dimen/buttonHigh"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        android:onClick="openLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/logoSq"
+        android:layout_height="@dimen/logoSq"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/movie_logo_app" />
+
+</android.support.constraint.ConstraintLayout>
